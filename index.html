@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTS-SOFT</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <header class="header item_desktop">
+        <div class="header__inner">
+
+            <a class="header__button" href="#">
+                <img src="images/geo.svg" alt="geolocacia" width="14px" height="20px" class="geo"> г.Королев
+            </a>
+
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">О нас 
+                            <img class="indicator" src="images/chevron-up.svg" alt="">
+                        </a>
+                        
+                        <ul class="dropdown-content1 dropdown-content">
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">О компании</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Клиентам
+                            <img class="indicator" src="images/chevron-up.svg" alt="">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">О компании</a>
+                            </li>
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">Оплата</a>
+                            </li>
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">Гарантия</a>
+                            </li>
+                            <li class="dropdown-paragraph">
+                                <a class="dropdown-link" href="#">Возврат</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Vin запррос</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="header__tel tel" href="tel:+74951289560">
+                +7 (495) 128-95-60
+            </a>
+
+        </div>
+    </header> 
+
+
+    <section class="black">
+        <div class="black__header">
+
+            <div class="menu__btn item_mobile" id="sandwichmenu" >
+                <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="2" fill="white"/>
+                    <rect y="7" width="25" height="2" fill="white"/>
+                    <rect y="14" width="20" height="2" fill="white"/>
+                </svg>    
+            </div>
+
+            <a class="black__logo logo" href="#">ЛОГОТИП</a>
+            
+            <div class="search__box item_desktop">
+                <input type="text" id="searchInput" class="search__txt" placeholder="Поиск" oninput="checkInput()">
+                <span class="search__span" id="searchSpan" onclick="clearText()">Щетки стеклоочистителя</span>
+                <a href="#" class="search__btn">
+                    <i class="fa fa__search" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_121_1208)">
+                            <path d="M17.9697 19.0303C18.2626 19.3232 18.7374 19.3232 19.0303 19.0303C19.3232 18.7374 19.3232 18.2626 19.0303 17.9697L17.9697 19.0303ZM15.75 9C15.75 12.7279 12.7279 15.75 9 15.75V17.25C13.5563 17.25 17.25 13.5563 17.25 9H15.75ZM9 15.75C5.27208 15.75 2.25 12.7279 2.25 9H0.75C0.75 13.5563 4.44365 17.25 9 17.25V15.75ZM2.25 9C2.25 5.27208 5.27208 2.25 9 2.25V0.75C4.44365 0.75 0.75 4.44365 0.75 9H2.25ZM9 2.25C12.7279 2.25 15.75 5.27208 15.75 9H17.25C17.25 4.44365 13.5563 0.75 9 0.75V2.25ZM19.0303 17.9697L14.8428 13.7821L13.7821 14.8428L17.9697 19.0303L19.0303 17.9697Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_121_1208">
+                            <rect width="19" height="19" fill="white" transform="translate(0.5 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                    </i>
+                </a>
+            </div>
+
+            <div class="black__button">
+                <button class="black__basket button" type="button">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 7.5H19.5M1.5 7.5L3.5 17.5H17.5L19.5 7.5M1.5 7.5L7.5 1.5M19.5 7.5L13.5 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>         
+                    <div class="count">0</div>               
+                </button>
+                <button class="black__lk button" type="button">
+                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 19.5V17.5C17.5 15.2909 15.7091 13.5 13.5 13.5H5.5C3.2909 13.5 1.5 15.2909 1.5 17.5V19.5M13.5 5.5C13.5 7.7091 11.7091 9.5 9.5 9.5C7.2909 9.5 5.5 7.7091 5.5 5.5C5.5 3.2909 7.2909 1.5 9.5 1.5C11.7091 1.5 13.5 3.2909 13.5 5.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="count">
+                       <img src="images/dom.svg" alt="dom" width="8px" height="8px">
+                    </div>    
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="main">
+        
+        <div class="container">
+            <section class="special">
+                <div class="special__inner">
+                    
+                    <div class="search__box item_mobile">
+                        <input type="text" id="searchInput" class="search__txt" placeholder="Поиск" oninput="checkInput()">
+                        <span class="search__span" id="searchSpan" onclick="clearText()">Щетки стеклоочистителя</span>
+                        <a href="#" class="search__btn">
+                            <i class="fa fa__search" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_121_1208)">
+                                    <path d="M17.9697 19.0303C18.2626 19.3232 18.7374 19.3232 19.0303 19.0303C19.3232 18.7374 19.3232 18.2626 19.0303 17.9697L17.9697 19.0303ZM15.75 9C15.75 12.7279 12.7279 15.75 9 15.75V17.25C13.5563 17.25 17.25 13.5563 17.25 9H15.75ZM9 15.75C5.27208 15.75 2.25 12.7279 2.25 9H0.75C0.75 13.5563 4.44365 17.25 9 17.25V15.75ZM2.25 9C2.25 5.27208 5.27208 2.25 9 2.25V0.75C4.44365 0.75 0.75 4.44365 0.75 9H2.25ZM9 2.25C12.7279 2.25 15.75 5.27208 15.75 9H17.25C17.25 4.44365 13.5563 0.75 9 0.75V2.25ZM19.0303 17.9697L14.8428 13.7821L13.7821 14.8428L17.9697 19.0303L19.0303 17.9697Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_121_1208">
+                                    <rect width="19" height="19" fill="white" transform="translate(0.5 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                    
+                            </i>
+                        </a>
+                    </div>
+
+
+                    <h2 class="special__title title">
+                        Спецпредложения
+                    </h2>
+        
+                    <div class="special__slider slider splide">    
+        
+                        <div class="special__slider-slid slid ">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    10 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    11 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    12 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    13 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid ">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    14 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    15 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    16 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    10 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    18 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="special__slider-slid slid">
+                    
+                            <div class="slid__img">
+                                <img src="images/product.png" alt="product">
+                            </div>
+                    
+                            <div class="slid__title">
+                                Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+                            </div>
+                    
+                            <div class="slid__number">
+                                Номер: <span>Тут номер</span>
+                            </div>
+                    
+                            <div class="slid__brand">
+                                Бренд: <span>Название бренда</span>
+                            </div>
+                    
+                            <div class="slid__info">
+                    
+                                <div class="price">
+                                    10 000 р.
+                                </div>
+                
+                                <button class="buy" type="button">
+                                    Купить
+                                </button>
+                    
+                            </div>
+                    
+                        </div>
+                    </div>
+
+                    <button class="prev button" id="prev">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22.5" fill="#CCCCCC" fill-opacity="0.6"/>
+                            <path d="M26.4852 16.4142L25.071 15L18 22.0711L25.0711 29.1421L26.4853 27.7279L20.8284 22.071L26.4852 16.4142Z" fill="black"/>
+                        </svg>                            
+                    </button>
+
+                    <button class="next button" id="next">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22.5" transform="rotate(-180 22.5 22.5)" fill="#CCCCCC" fill-opacity="0.6"/>
+                            <path d="M18.5148 28.5858L19.929 30L27 22.9289L19.9289 15.8579L18.5147 17.2721L24.1716 22.929L18.5148 28.5858Z" fill="black"/>
+                        </svg>    
+                    </button>
+        
+                </div>
+            </section>
+        
+           <section class="company">
+        
+                <h2 class="company__title title">
+                    О компании
+                </h2>
+        
+                <div class="company__text">
+                    ООО "СпецАвтоПром" - компания, занимающаяся розничной продажей запчастей, расходных материалов, аксессуаров и комплектующих для автомобилей иностранного производства. В нашем ассортименте продукция ведущих европейских, корейских, японских марок, а так же большой выбор неоригинальных автомобильных запчастей.
+                    Мы предлагаем быстрый и удобный сервис по поиску, подбору и заказу необходимых вам запчастей, сезонную систему скидок и максимально короткие сроки доставки.
+                </div>
+        
+            </section>  
+        </div>
+     
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="footer-main">
+
+            <header class="footer-header">
+                <a class="footer-logo logo" href="#">ЛОГОТИП</a>
+                <div class="footer-socials">
+
+                    <ul class="footer-soc1als-list">
+                        <li class="footer-soc1als-item">
+                          <a class="footer-soc1als-link" href="#" target="_blank">
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2301_1045)">
+                                <path d="M25.03 50.6602C38.8371 50.6602 50.03 39.4673 50.03 25.6602C50.03 11.853 38.8371 0.660156 25.03 0.660156C11.2229 0.660156 0.0300293 11.853 0.0300293 25.6602C0.0300293 39.4673 11.2229 50.6602 25.03 50.6602Z" fill="#4E6297"/>
+                                <path d="M36.28 17.9335C36.28 16.0618 34.6284 14.4102 32.7567 14.4102H18.5533C16.6816 14.4102 15.03 16.0618 15.03 17.9335V32.1369C15.03 34.0086 16.6816 35.6602 18.5533 35.6602H25.71V27.6226H23.0676V24.0993H25.71V22.668C25.71 20.2457 27.4717 18.1537 29.6738 18.1537H32.5365V21.677H29.6738C29.3435 21.677 29.0132 22.0073 29.0132 22.668V24.0993H32.5365V27.6226H29.0132V35.6602H32.7567C34.6284 35.6602 36.28 34.0086 36.28 32.1369V17.9335Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2301_1045">
+                                <rect width="50" height="50" fill="white" transform="translate(0.0300293 0.660156)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="footer-soc1als-item">
+                            <a class="footer-soc1als-link" href="#" target="_blank">
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2301_1048)">
+                                    <path d="M25 50.6602C38.8071 50.6602 50 39.4673 50 25.6602C50 11.853 38.8071 0.660156 25 0.660156C11.1929 0.660156 0 11.853 0 25.6602C0 39.4673 11.1929 50.6602 25 50.6602Z" fill="url(#paint0_linear_2301_1048)"/>
+                                    <path d="M33.226 15.6602H18.024C16.3077 15.6602 15 16.9679 15 18.6842V33.8862C15 35.6025 16.3077 36.9102 18.024 36.9102H33.226C34.9423 36.9102 36.25 35.6025 36.25 33.8862V18.6842C36.25 16.9679 34.9423 15.6602 33.226 15.6602ZM25.625 32.6602C29.1394 32.6602 32 29.8814 32 26.5304C32 25.9583 31.9183 25.3044 31.7548 24.814H33.5529V33.4775C33.5529 33.8862 33.226 34.2948 32.7356 34.2948H18.5144C18.1058 34.2948 17.6971 33.9679 17.6971 33.4775V24.7323H19.5769C19.4135 25.3044 19.3317 25.8765 19.3317 26.4487C19.25 29.8814 22.1106 32.6602 25.625 32.6602ZM25.625 30.2083C23.3365 30.2083 21.5385 28.4102 21.5385 26.2035C21.5385 23.9967 23.3365 22.1987 25.625 22.1987C27.9135 22.1987 29.7115 23.9967 29.7115 26.2035C29.7115 28.4919 27.9135 30.2083 25.625 30.2083ZM33.4712 21.4631C33.4712 21.9535 33.0625 22.3621 32.5721 22.3621H30.2837C29.7933 22.3621 29.3846 21.9535 29.3846 21.4631V19.2564C29.3846 18.766 29.7933 18.3573 30.2837 18.3573H32.5721C33.0625 18.3573 33.4712 18.766 33.4712 19.2564V21.4631Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_2301_1048" x1="10.625" y1="45.0352" x2="43.75" y2="10.6602" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EEA054"/>
+                                    <stop offset="0.502762" stop-color="#D64763"/>
+                                    <stop offset="1" stop-color="#B62A99"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_2301_1048">
+                                    <rect width="50" height="50" fill="white" transform="translate(0 0.660156)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-soc1als-item">
+                            <a class="footer-soc1als-link" href="#" target="_blank">
+                                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2301_1051)">
+                                    <path d="M25.97 50.6602C39.7771 50.6602 50.97 39.4673 50.97 25.6602C50.97 11.853 39.7771 0.660156 25.97 0.660156C12.1629 0.660156 0.969971 11.853 0.969971 25.6602C0.969971 39.4673 12.1629 50.6602 25.97 50.6602Z" fill="#F40000"/>
+                                    <path d="M36.8614 24.3016C36.8614 23.8168 36.7806 23.2511 36.7806 22.6046C36.6998 21.9582 36.619 21.3117 36.5382 20.7461C36.3766 20.0996 36.1341 19.6147 35.6493 19.2107C35.2452 18.8067 34.6796 18.5642 34.1139 18.4834C32.2554 18.241 29.5079 18.1602 25.7907 18.1602C22.0735 18.1602 19.2452 18.241 17.4675 18.4834C16.9018 18.5642 16.3362 18.8067 15.9321 19.2107C15.5281 19.6147 15.2048 20.0996 15.0432 20.7461C14.8816 21.3117 14.8008 21.8774 14.8008 22.6046C14.72 23.2511 14.72 23.8168 14.72 24.3016C14.72 24.7865 14.72 25.3521 14.72 26.1602C14.72 26.9683 14.72 27.6147 14.72 28.0188C14.72 28.5036 14.8008 29.0693 14.8008 29.7158C14.8816 30.3622 14.9624 31.0087 15.0432 31.5743C15.2048 32.2208 15.4473 32.7057 15.9321 33.1097C16.3362 33.5137 16.9018 33.7562 17.4675 33.837C19.3261 34.0794 22.0735 34.1602 25.7907 34.1602C29.5079 34.1602 32.3362 34.0794 34.1139 33.837C34.6796 33.7562 35.2452 33.5137 35.6493 33.1097C36.0533 32.7057 36.3766 32.2208 36.5382 31.5743C36.6998 31.0087 36.7806 30.443 36.7806 29.7158C36.8614 29.0693 36.8614 28.5036 36.8614 28.0188C36.8614 27.5339 36.8614 26.9683 36.8614 26.1602C36.8614 25.3521 36.8614 24.7056 36.8614 24.3016ZM30.0735 26.8067L23.6897 30.7663C23.6089 30.8471 23.4473 30.9279 23.2857 30.9279C23.124 30.9279 23.0432 30.9279 22.8816 30.8471C22.6392 30.6855 22.4776 30.443 22.4776 30.1198V22.1198C22.4776 21.7966 22.6392 21.5541 22.8816 21.3925C23.124 21.2309 23.4473 21.2309 23.6897 21.3925L30.0735 25.3521C30.316 25.5137 30.4776 25.7562 30.4776 25.9986C30.4776 26.241 30.316 26.645 30.0735 26.8067Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2301_1051">
+                                    <rect width="50" height="50" fill="white" transform="translate(0.969971 0.660156)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>    
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer-copyright">
+                    © Название компании Все права защищены               
+                </div>
+            </header>
+
+        </div>
+    </footer> 
+
+
+    <div class="menu__mobile item_mobile">
+        <div class="close_modal"></div>
+        <ul class="header__menu-list">
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О нас 
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Клиентам
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Vin запррос</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
